@@ -16,6 +16,7 @@ function inExceptionList(key) {
 function checkLicenses(licenses) {
   var licensed = {}
   var problems = []
+  var usedExceptions = {}
 
   var licensedCount = 0
   var problemCount = 0
@@ -27,6 +28,7 @@ function checkLicenses(licenses) {
     if (inWhitelist(item.licenses + '')) {
       licensedCount++
     } else if (inExceptionList(key)) {
+      usedExceptions[key] = exceptions[key]
       exceptionCount++
     } else {
       // There's a problem here
@@ -71,7 +73,7 @@ function checkLicenses(licenses) {
 
   console.log(ppLicensed('Acceptable project licenses (uses):', licensed), NL)
 
-  console.log(ppExceptions('Acceptable project license exceptions:', exceptions), NL)
+  console.log(ppExceptions('Acceptable project license exceptions:', usedExceptions), NL)
 
   const summary = [
     colors.green(`Licensed (${licensedCount})`),
