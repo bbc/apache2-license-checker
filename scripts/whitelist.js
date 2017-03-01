@@ -4,6 +4,7 @@ module.exports = [
   'ISC',
   'MIT',
   'Apache-2.0',
+  'BSD*',
   'BSD-2-Clause',
   'BSD-3-Clause',
   'BSD-4-Clause',
