@@ -73,7 +73,9 @@ function checkLicenses(licenses) {
 
   console.log(ppLicensed('Acceptable project licenses (uses):', licensed), NL)
 
-  console.log(ppExceptions('Acceptable project license exceptions:', usedExceptions), NL)
+  if(Object.keys(usedExceptions).length) {
+    console.log(ppExceptions('Acceptable project license exceptions:', usedExceptions), NL)
+  }
 
   const summary = [
     colors.green(`Licensed (${licensedCount})`),
@@ -86,7 +88,7 @@ function checkLicenses(licenses) {
     console.log(colors.green(`Licenses not ok`), summary)
     process.exit(1)
   } else {
-    console.log(colors.green(`All licenses ok`), summary)
+    console.log(colors.green(`All licenses ok`), ':', summary)
     process.exit(0)
   }
 }
