@@ -12,7 +12,8 @@ For example:
 ```js
 ...
   "scripts": {
-    "test": "node run-tests.js && tvp-apache2-license-checker"
+    "test": "mocha && npm run check-licenses",
+    "check-licenses": "tvp-apache2-license-checker"
   },
 ...
 ```
