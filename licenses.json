@@ -1,0 +1,13 @@
+{
+  "colors@1.1.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Marak/colors.js",
+    "publisher": "Marak Squires",
+    "licenseFile": "/Users/beechj01/workspace/tvp-apache2-license-checker/node_modules/colors/LICENSE"
+  },
+  "tvp-apache2-license-checker@1.0.0": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/bbc/tvp-apache2-license-checker",
+    "publisher": "BBC"
+  }
+}
