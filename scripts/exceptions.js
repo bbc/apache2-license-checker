@@ -1,5 +1,5 @@
 module.exports = {
-  "cosmos-deploy@3.1.2": {
+  "cosmos-deploy@*": {
     "reason": "Not required, acceptable use for BBC internal deployments"
   },
   "cycle@1.0.3": {
