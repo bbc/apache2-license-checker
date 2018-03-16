@@ -1,19 +1,19 @@
-# TV and Radio - Apache2 License Checker
+# Apache2 License Checker
 
 Automated license checker for validating project dependencies for compatible Apache2 licenses.
 
 ## Use with your project
 
-- Run `npm install tvp-apache2-license-checker --save-dev`
-- Run `tvp-apache2-license-checker` in the root of your project
-- Modify your `package.json` to include `tvp-apache2-license-checker` as part of your *test* script
+- Run `npm install apache2-license-checker --save-dev`
+- Run `apache2-license-checker` in the root of your project
+- Modify your `package.json` to include `apache2-license-checker` as part of your *test* script
 
 For example:
 ```js
 ...
   "scripts": {
     "test": "mocha && npm run check-licenses",
-    "check-licenses": "tvp-apache2-license-checker"
+    "check-licenses": "apache2-license-checker"
   },
 ...
 ```

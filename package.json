@@ -1,6 +1,6 @@
 {
-  "name": "tvp-apache2-license-checker",
-  "version": "1.0.4",
+  "name": "apache2-license-checker",
+  "version": "1.0.0",
   "description": "Automated license checker for validating project dependencies for compatable Apache2 licenses.",
   "main": "run.js",
   "scripts": {
@@ -9,12 +9,12 @@
   "bin": "./bin/run",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbc/tvp-apache2-license-checker.git"
+    "url": "https://github.com/bbc/apache2-license-checker.git"
   },
   "author": "BBC",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/bbc/tvp-apache2-license-checker/issues"
+    "url": "https://github.com/bbc/apache2-license-checker/issues"
   },
   "dependencies": {
     "colors": "^1.1.2",
