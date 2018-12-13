@@ -1,6 +1,6 @@
 {
   "name": "apache2-license-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automated license checker for validating project dependencies for compatable Apache2 licenses.",
   "main": "run.js",
   "scripts": {
