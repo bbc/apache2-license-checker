@@ -61,7 +61,7 @@ function checkLicenses(licenses) {
       const value = items[item]
       return colors.red([
         `  ${item.key}`,
-        `    License:     ${item.licences}`,
+        `    License:     ${item.licenses}`,
         `    Repository:  ${item.repository}`,
         `    Publisher:   ${item.publisher}`,
         `    Url:         ${item.url}`,
