@@ -10,7 +10,10 @@ function inWhitelist(licenseString) {
 }
 
 function inExceptionList(key) {
-  return exceptions[key]
+  const packageName = key.split('@')[0]
+  const anyVersionKey = `${packageName}@*`
+
+  return exceptions[key] || exceptions[anyVersionKey]
 }
 
 function checkLicenses(licenses) {
@@ -27,14 +30,18 @@ function checkLicenses(licenses) {
     licensed[item.licenses] = (licensed[item.licenses] || 0) + 1
     if (inWhitelist(item.licenses + '')) {
       licensedCount++
-    } else if (inExceptionList(key)) {
-      usedExceptions[key] = exceptions[key]
-      exceptionCount++
     } else {
-      // There's a problem here
-      item.key = key
-      problems.push(item)
-      problemCount++
+      const exception = inExceptionList(key)
+      if (exception) {
+        usedExceptions[key] = exception
+        exceptionCount++
+      }
+      else {
+        // There's a problem here
+        item.key = key
+        problems.push(item)
+        problemCount++
+      }
     }
   })
 
