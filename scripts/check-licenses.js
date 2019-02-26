@@ -3,7 +3,7 @@ const colors = require('colors/safe')
 const pp = (json) => JSON.stringify(json, null, 2)
 const NL = '\n'
 
-const exceptions = require('./exceptions')
+const exceptions = require('./find-exceptions.js')
 
 function inWhitelist(licenseString) {
   return whitelist.includes(licenseString)
