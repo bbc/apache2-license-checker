@@ -21,5 +21,7 @@ module.exports = [
   '(MIT AND CC-BY-3.0)',
   'Unlicense',
   'MIT / http://rem.mit-license.org',
-  'WTFPL'
+  'WTFPL',
+  'CC-BY-3.0',
+  'CC0-1.0'
 ]
