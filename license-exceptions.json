@@ -1,0 +1,10 @@
+{
+  "exceptions": {
+    "spdx-exceptions@*": {
+      "reason": "Public Domain; see https://github.com/kemitchell/spdx-exceptions.json"
+    },
+    "spdx-license-ids@*": {
+      "reason": "Public Domain; see https://github.com/shinnn/spdx-license-ids"
+    }
+  }
+}
