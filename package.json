@@ -4,7 +4,10 @@
   "description": "Automated license checker for validating project dependencies for compatable Apache2 licenses.",
   "main": "run.js",
   "scripts": {
-    "test": "node run.js"
+    "test": "node run.js",
+    "patch": "npm version patch -m 'Upgrade to version %s'",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "bin": "./bin/run",
   "repository": {
