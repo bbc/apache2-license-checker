@@ -4,8 +4,7 @@ Automated license checker for validating project dependencies for compatible Apa
 
 ## Use with your project
 
-- Run `npm install apache2-license-checker --save-dev`
-- Run `apache2-license-checker` in the root of your project
+- Run `npm install @bbc/apache2-license-checker --save-dev`
 - Modify your `package.json` to include `apache2-license-checker` as part of your *test* script
 
 For example:
@@ -20,7 +19,7 @@ For example:
 
 The license checker will fail with an *exit code* of `1` if there are any problems with the license, and will pass with an *exit code* of `0` if all checks are ok.
 
-A temporary file `licenses.json` will be created containing a full license analysis based on output from the [`license-checker`](https://www.npmjs.com/package/license-checker) tool.
+A temporary file `licenses.json` will be created containing a full license analysis based on output from the [`license-checker`](https://www.npmjs.com/package/license-checker) tool. You will probably want to `.gitignore` this file.
 
 ## Development
 
