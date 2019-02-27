@@ -7,7 +7,7 @@ function findExceptions() {
   const file = readFile(exceptionsFilePath)
   const exceptions = parseExceptionsFile(file)
 
-  return exceptions
+  return exceptions || {}
 }
 
 function readFile(filePath) {
